@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ganesh — Data Analyst Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
+  <!-- Google Fonts: Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- ╔══════════════════════════════════╗
+       ║           NAVBAR                ║
+       ╚══════════════════════════════════╝ -->
+  <header class="navbar" id="top">
+    <!-- EDIT: Change "ganesh" to your preferred display name -->
+    <a href="#home" class="brand">ganesh<span class="dot">.</span></a>
+
+    <nav class="nav-links" id="nav-links">
+      <a href="#home">Home</a>
+      <a href="#about">About me</a>
+      <a href="#services">What I Do</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact me</a>
+    </nav>
+
+    <div class="nav-actions">
+      <a href="#contact" class="btn-contact">Contact ↗</a>
+      <!-- Hamburger for mobile -->
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+
+  <!-- ╔══════════════════════════════════╗
+       ║           HERO                  ║
+       ╚══════════════════════════════════╝ -->
+  <section id="home" class="hero">
+    <!-- Decorative blobs (purely visual) -->
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div> 
+
+    <div class="hero-inner">
+      <!-- EDIT: Replace profile.jpg with your actual photo -->
+      <div class="hero-avatar">
+        <img src="images/profile.jpg" alt="Ganesh" class="avatar-img"
+             onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+        <div class="avatar-fallback">G</div>
+      </div>
+
+      <p class="hero-greeting">Hi, I'm Ganesh 👋</p>
+
+      <h1 class="hero-headline">
+        Data Analyst focused on turning data<br class="br-desk"/> into actionable insights.
+      </h1>
+
+      <p class="hero-sub">
+        I specialize in SQL, data cleaning, and building dashboards that help businesses make better decisions.
+      </p>
+
+      <div class="hero-btns">
+        <a href="#projects" class="btn-primary">View Projects →</a>
+        <!-- REPLACE_RESUME_FILE_HERE: put ganesh_resume.pdf in same folder -->
+        <a href="images/Ganesh_Sattu_Data_Analyst_Resume (1).pdf" class="btn-secondary" download>Download Resume ⬇</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ╔══════════════════════════════════╗
+       ║           ABOUT                 ║
+       ╚══════════════════════════════════╝ -->
+  <!-- EDIT_ABOUT_SECTION_HERE -->
+  <section id="about" class="section">
+    <div class="container">
+      <p class="eyebrow">Introduction</p>
+      <h2 class="section-title">About me</h2>
+
+      <div class="about-grid">
+        <!-- Photo -->
+        <div class="about-photo-col">
+          <div class="photo-frame">
+            <!-- EDIT: Replace profile.jpg with your actual photo -->
+            <img src="images/ganapic.png" alt="Ganesh" class="about-photo"
+                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+            <div class="photo-fallback">G</div>
+            <!-- Rotating badge like Eliana template -->
+            <div class="rotating-badge">
+              <svg viewBox="0 0 100 100" class="badge-svg">
+                <path id="bp" d="M50,50 m-32,0 a32,32 0 1,1 64,0 a32,32 0 1,1 -64,0" fill="none"/>
+                <text font-size="10" fill="#8b5cf6" font-family="Poppins,sans-serif" letter-spacing="2.2">
+                  <textPath href="#bp">DATA ANALYST · SQL · POWER BI · </textPath>
+                </text>
+              </svg>
+              <span class="badge-emoji">📊</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Content -->
+        <!-- EDIT_ABOUT_SECTION_HERE: Edit the paragraph below -->
+        <div class="about-content">
+          <p class="about-body">
+            I'm a <strong>Data Analyst</strong> passionate about transforming raw, messy datasets into clear, meaningful insights. I work with <strong>SQL</strong> to extract and manipulate data from relational databases, use <strong>Power BI</strong> to create interactive dashboards that stakeholders can act on, and apply <strong>Excel</strong> for in-depth data cleaning and transformation. My approach is always business-first — every analysis I do is anchored in the question: <em>what decision does this data help us make?</em>
+          </p>
+
+          <!-- Info cards (like Eliana's Languages / Education / Projects cards) -->
+          <div class="info-cards">
+            <div class="info-card">
+              <div class="info-icon">
+                <!-- SQL icon -->
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+              </div>
+              <h4>Skills</h4>
+              <p>SQL, Power BI, Excel, Data Analysis, Data Cleaning</p>
+            </div>
+            <div class="info-card">
+              <div class="info-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+              </div>
+              <h4>Education</h4>
+              <p>Graduate — Computer Science</p>
+            </div>
+            <div class="info-card">
+              <div class="info-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+              </div>
+              <h4>Projects</h4>
+              <p>3+ real-world data projects completed</p>
+            </div>
+          </div>
+
+          <!-- Tools row -->
+          <p class="tools-label">Tools I use</p>
+          <div class="tools-row">
+            <span class="tool-chip">SQL</span>
+            <span class="tool-chip">Power BI</span>
+            <span class="tool-chip">Excel</span>
+            <span class="tool-chip">PostgreSQL</span>
+            <span class="tool-chip">Data Cleaning</span>
+            <span class="tool-chip">Dashboarding</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ╔══════════════════════════════════╗
+       ║        SERVICES / WHAT I DO     ║
+       ╚══════════════════════════════════╝ -->
+  <section id="services" class="section section-alt">
+    <div class="container">
+      <p class="eyebrow">What I offer</p>
+      <h2 class="section-title">What I Do</h2>
+      <p class="section-sub">
+        Specialized data analytics services that help organizations understand their numbers and act on them with confidence.
+      </p>
+
+      <div class="services-grid">
+
+        <div class="service-card">
+          <div class="service-icon">
+            <!-- Broom/Clean icon -->
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 3l18 18"/><path d="M8.5 8.5L3 21h9l-3.5-4.5"/><path d="M17 3s-5 2-5 8"/></svg>
+          </div>
+          <h3>Data Cleaning &amp; Transformation</h3>
+          <p>Raw data is almost always messy. I clean, deduplicate, standardize, and restructure datasets so they're analysis-ready and reliable.</p>
+          <a href="#projects" class="service-link">See examples →</a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <!-- Database icon -->
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+          </div>
+          <h3>SQL Data Analysis</h3>
+          <p>I write efficient, optimized SQL queries to extract, join, filter, and aggregate data — uncovering trends, anomalies, and business patterns.</p>
+          <a href="#projects" class="service-link">See examples →</a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <!-- Chart bar icon -->
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/><line x1="2" y1="20" x2="22" y2="20"/></svg>
+          </div>
+          <h3>Dashboard Creation (Power BI)</h3>
+          <p>Interactive Power BI dashboards that turn complex data into clear visuals — KPIs, drill-throughs, and filters that empower decision-makers.</p>
+          <a href="#projects" class="service-link">See examples →</a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <!-- Lightbulb icon -->
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><line x1="9" y1="18" x2="15" y2="18"/><line x1="10" y1="22" x2="14" y2="22"/><path d="M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .23 2.23 1.5 3.5A4.61 4.61 0 0 1 8.91 14"/></svg>
+          </div>
+          <h3>Business Insights &amp; Reporting</h3>
+          <p>Converting analytical outputs into business-ready reports with clear narratives, recommendations, and next steps for stakeholders.</p>
+          <a href="#contact" class="service-link">Get in touch →</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ╔══════════════════════════════════╗
+       ║           PROJECTS              ║
+       ╚══════════════════════════════════╝ -->
+  <!-- EDIT_PROJECT_LINKS_HERE: Replace href="#" with actual GitHub/project URLs -->
+  <section id="projects" class="section">
+    <div class="container">
+      <p class="eyebrow">My portfolio</p>
+      <h2 class="section-title">Projects</h2>
+      <p class="section-sub">
+        Real-world data analysis projects demonstrating SQL querying, Power BI dashboarding, and business insight generation.
+      </p>
+
+      <div class="projects-grid">
+
+        <!-- ── Project 1: Zepto ── -->
+        <div class="project-card" data-aos="fade-up">
+          <!-- EDIT: Replace with an actual screenshot or image -->
+          <div class="project-thumb thumb-blue">
+            <div class="thumb-inner">
+              <span class="thumb-icon">🛒</span>
+              <span class="thumb-title">Zepto Inventory</span>
+            </div>
+            <span class="proj-category">SQL · PostgreSQL</span>
+          </div>
+
+          <div class="project-body">
+            <h3 class="proj-title">Zepto Inventory Data Analysis</h3>
+            <p class="proj-desc">
+              End-to-end SQL analysis of a retail inventory dataset — cleaning dirty records, transforming structures, and extracting strategic business insights.
+            </p>
+
+            <!-- Key insights bullets -->
+            <div class="proj-insights">
+              <p class="insights-label">Key Insights</p>
+              <ul class="insights-list">
+                <li>Identified top 10 overstocked SKUs causing ~23% excess inventory cost</li>
+                <li>Discount analysis revealed high-discount items with negative margin contribution</li>
+                <li>Revenue estimation by category helped prioritize restocking strategy</li>
+              </ul>
+            </div>
+
+            <div class="proj-tech-tags">
+              <span>SQL</span><span>PostgreSQL</span><span>Data Cleaning</span><span>Inventory Analysis</span>
+            </div>
+
+            <!-- EDIT_PROJECT_LINKS_HERE -->
+            <a href="https://github.com/codeganesh452/zepto-sql-data-analysis" class="btn-view-project" target="_blank" rel="noopener">
+              View Project ↗
+            </a>
+          </div>
+        </div>
+
+        <!-- ── Project 2: Call Center ── -->
+        <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+          <!-- EDIT: Replace with an actual screenshot or image -->
+          <div class="project-thumb thumb-green">
+            <div class="thumb-inner">
+              <span class="thumb-icon">📞</span>
+              <span class="thumb-title">Call Center KPIs</span>
+            </div>
+            <span class="proj-category">Power BI · DAX</span>
+          </div>
+
+          <div class="project-body">
+            <h3 class="proj-title">Call Center Performance Dashboard</h3>
+            <p class="proj-desc">
+              Interactive Power BI dashboard tracking agent performance, call trends, and customer satisfaction metrics in real time.
+            </p>
+
+            <div class="proj-insights">
+              <p class="insights-label">Key Insights</p>
+              <ul class="insights-list">
+                <li>Mapped peak call hours to optimise agent shift scheduling</li>
+                <li>High abandonment rate correlated with average handle time above 4 min</li>
+                <li>CSAT score improved 12% following dashboard-led coaching decisions</li>
+              </ul>
+            </div>
+
+            <div class="proj-tech-tags">
+              <span>Power BI</span><span>DAX</span><span>KPI Tracking</span><span>Dashboard</span>
+            </div>
+
+            <!-- EDIT_PROJECT_LINKS_HERE -->
+            <a href="https://github.com/codeganesh452/call-center-performance-dashboard-powerbi" class="btn-view-project" target="_blank" rel="noopener">
+              View Project ↗
+            </a>
+          </div>
+        </div>
+
+        <!-- ── Project 3: Chocolate Sales ── -->
+        <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+          <!-- EDIT: Replace with an actual screenshot or image -->
+          <div class="project-thumb thumb-rose">
+            <div class="thumb-inner">
+              <span class="thumb-icon">🍫</span>
+              <span class="thumb-title">Chocolate Sales</span>
+            </div>
+            <span class="proj-category">Power BI · Excel</span>
+          </div>
+
+          <div class="project-body">
+            <h3 class="proj-title">Chocolate Sales Dashboard</h3>
+            <p class="proj-desc">
+              Regional product contribution and shipment trend analysis visualized in Power BI to support marketing and inventory planning.
+            </p>
+
+            <div class="proj-insights">
+              <p class="insights-label">Key Insights</p>
+              <ul class="insights-list">
+                <li>Top 3 products drove 61% of total revenue across all regions</li>
+                <li>Seasonal Q4 shipment peaks identified — enabled proactive inventory planning</li>
+                <li>Underperforming regions flagged for targeted sales strategy review</li>
+              </ul>
+            </div>
+
+            <div class="proj-tech-tags">
+              <span>Power BI</span><span>Excel</span><span>Sales Analysis</span><span>Regional Trends</span>
+            </div>
+
+            <!-- EDIT_PROJECT_LINKS_HERE -->
+            <a href="https://github.com/codeganesh452/chocolate-sales-dashboard-power-bi" class="btn-view-project" target="_blank" rel="noopener">
+              View Project ↗
+            </a>
+          </div>
+        </div>
+
+      </div><!-- /.projects-grid -->
+
+      <!-- GitHub CTA -->
+      <!-- EDIT_GITHUB_LINK_HERE -->
+      <div class="github-cta">
+        <a href="https://github.com/codeganesh452" class="btn-ghost" target="_blank" rel="noopener">
+          View all on GitHub →
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ╔══════════════════════════════════╗
+       ║           SKILLS                ║
+       ╚══════════════════════════════════╝ -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <p class="eyebrow">Technical expertise</p>
+      <h2 class="section-title">My Skills</h2>
+      <p class="section-sub">Core competencies in data analytics, supported by foundational web skills.</p>
+
+      <div class="skills-layout">
+        <!-- Primary skills -->
+        <div class="skills-group">
+          <p class="skills-group-label">Primary — Data Analytics</p>
+          <div class="skill-tags-primary">
+            <span class="skill-tag-p">SQL</span>
+            <span class="skill-tag-p">Power BI</span>
+            <span class="skill-tag-p">Excel</span>
+            <span class="skill-tag-p">Data Cleaning</span>
+            <span class="skill-tag-p">Data Analysis</span>
+            <span class="skill-tag-p">PostgreSQL</span>
+            <span class="skill-tag-p">Dashboarding</span>
+            <span class="skill-tag-p">Business Reporting</span>
+          </div>
+        </div>
+
+        <!-- Secondary skills -->
+        <div class="skills-group">
+          <p class="skills-group-label">Secondary — Web & Dev</p>
+          <div class="skill-tags-secondary">
+            <span class="skill-tag-s">HTML</span>
+            <span class="skill-tag-s">CSS</span>
+            <span class="skill-tag-s">JavaScript</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ╔══════════════════════════════════╗
+       ║           CONTACT               ║
+       ╚══════════════════════════════════╝ -->
+  <!-- EDIT_CONTACT_DETAILS_HERE -->
+  <section id="contact" class="section">
+    <div class="container">
+      <p class="eyebrow">Connect with me</p>
+      <h2 class="section-title">Get in touch</h2>
+      <p class="section-sub">
+        Open to data analyst roles and freelance projects. Fill in the form or reach me directly through the links.
+      </p>
+
+      <div class="contact-layout">
+
+        <!-- Contact form -->
+        <form class="contact-form" id="contact-form"   action="https://formspree.io/f/mykojaab" method="post" novalidate>
+          <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html">
+          <div class="form-row-2">
+            <div class="form-group">
+              <label for="name">Your name</label>
+              <input type="text" id="name" name="name" placeholder="e.g. Priya Sharma" required/>
+              <span class="form-error" id="name-error">Please enter your name.</span>
+            </div>
+            <div class="form-group">
+              <!-- EDIT_CONTACT_DETAILS_HERE -->
+              <label for="email">Your email</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required/>
+              <span class="form-error" id="email-error">Please enter a valid email.</span>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project or opportunity..." required></textarea>
+            <span class="form-error" id="message-error">Please enter a message.</span>
+          </div>
+          <button type="submit" class="btn-submit" id="submit-btn">
+            Send message →
+          </button>
+          <p class="form-success" id="form-success">✅ Message sent! I'll get back to you soon.</p>
+        </form>
+
+        <!-- Direct contact links -->
+        <div class="contact-direct">
+          <p class="direct-heading">Or reach me directly</p>
+
+          <!-- EDIT_CONTACT_DETAILS_HERE: replace email -->
+      
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ganeshteja1616@gmail.com" target="_blank" class="direct-item">
+            <div class="direct-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div>
+              <p class="di-label">Email</p>
+              <!-- EDIT_CONTACT_DETAILS_HERE -->
+              <p class="di-value">ganeshteja1616@gmail.com</p>
+            </div>
+          </a>
+
+          <!-- EDIT_CONTACT_DETAILS_HERE: replace LinkedIn URL -->
+          <a href="https://www.linkedin.com/in/ganesh-sattu-b233a529b" class="direct-item" target="_blank" rel="noopener">
+            <div class="direct-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </div>
+            <div>
+              <p class="di-label">LinkedIn</p>
+              <p class="di-value">Ganesh Sattu</p>
+            </div>
+          </a>
+
+          <a href="https://github.com/codeganesh452" class="direct-item" target="_blank" rel="noopener">
+            <div class="direct-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            </div>
+            <div>
+              <p class="di-label">GitHub</p>
+              <p class="di-value">codeganesh452</p>
+            </div>
+          </a>
+
+          <!-- REPLACE_RESUME_FILE_HERE -->
+          <a href="images/Ganesh_Sattu_Data_Analyst_Resume (1).pdf" class="direct-item" download>
+            <div class="direct-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><line x1="9" y1="15" x2="15" y2="15"/></svg>
+            </div>
+            <div>
+              <p class="di-label">Resume</p>
+              <p class="di-value">Download PDF</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ╔══════════════════════════════════╗
+       ║           FOOTER                ║
+       ╚══════════════════════════════════╝ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-top">
+        <a href="#home" class="brand">ganesh<span class="dot">.</span></a>
+        <!-- EDIT_CONTACT_DETAILS_HERE -->
+        <a href="ganeshteja1616@gmail.com" class="footer-email">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          ganeshteja1616@gmail.com
+        </a>
+      </div>
+      <div class="footer-divider"></div>
+      <div class="footer-bottom">
+        <p>© 2026 Ganesh · Data Analyst Portfolio · Built with HTML, CSS &amp; JS</p>
+        <div class="footer-links">
+          <a href="https://github.com/codeganesh452" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://www.linkedin.com/in/ganesh-sattu-b233a529b" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ── Scripts ── -->
+  <script src="script.js"></script>
+</body>
+</html>
